@@ -1,0 +1,86 @@
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  justify-content: center;
+  place-items: center;
+  font-family: "Press Start 2P", serif;
+
+}
+
+.section {
+  background-color: rgb(158, 201, 30);
+  min-width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.copy{
+  align-self: flex-start;
+  
+}
+
+.playScore{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-self: flex-end;
+}
+
+.choices{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+  cursor: pointer;
+  padding-bottom: 4rem;
+}
+
+.buttons button{
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+#playerIcon, #computerIcon{
+  justify-content: center;
+  font-size: 5rem;
+  border: 2px dashed black;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  width: 20rem;
+  
+}
+
+.choices p{
+  justify-content: center;
+  align-items: center;
+}
+
+#playScore{
+  background-color: hsla(46, 65%, 45%, 0.658);
+  width: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 5rem;
+}
