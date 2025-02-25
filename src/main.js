@@ -29,10 +29,10 @@ function startGame(playerChoice) {
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
-        playScore.textContent = "You Win This Round!";
+        playScore.textContent = "You Win!";
         playerScoreCount++;
     } else {
-        playScore.textContent = "Computer Wins This Round!";
+        playScore.textContent = "Computer Wins!";
         computerScoreCount++;
     }
 

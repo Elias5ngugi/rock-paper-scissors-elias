@@ -12,7 +12,7 @@ body{
 }
 
 .section {
-  background-color: rgb(158, 201, 30);
+  background-color: #A3D200;
   min-height:  100vh;
   height: 100vh;
   display: flex;
@@ -92,7 +92,7 @@ body{
 }
 
 #playScore{
-  background-color: hsla(46, 65%, 45%, 0.658);
+  background-color:  #FBC02D;
   width: 600%;
   align-items: center;
   justify-content: center;
