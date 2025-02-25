@@ -4,6 +4,7 @@ html,body{
 }
 
 body{
+  display: flex;
   justify-content: center;
   place-items: center;
   font-family: "Press Start 2P", serif;
@@ -12,17 +13,23 @@ body{
 
 .section {
   background-color: rgb(158, 201, 30);
-  min-width: 100vh;
+  min-height:  100vh;
   height: 100vh;
   display: flex;
   flex-direction: column;  
   justify-content: space-between;
-  
+  align-items: center;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
   
 }
 
@@ -42,45 +49,91 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .buttons{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5rem;
+  padding: 1rem;
   cursor: pointer;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  
 }
 
 .buttons button{
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
 }
 #playerIcon, #computerIcon{
+  display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 5rem;
   border: 2px dashed black;
   margin-bottom: 1rem;
-  padding-bottom: 2rem;
-  align-items: center;
-  width: 20rem;
+  padding-bottom: 1rem;
+  width: 8rem;
+  height: 8rem;
   
 }
 
 .choices p{
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin: 0;
 }
 
 #playScore{
   background-color: hsla(46, 65%, 45%, 0.658);
-  width: 100vh;
+  width: 600%;
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 5rem;
+  height: 6rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playScore {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #playerIcon, #computerIcon {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .buttons button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #playerIcon, #computerIcon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .buttons button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }

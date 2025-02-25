@@ -1,46 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
-    
-  </head>
-  <body>
+</head>
+<body>
     <section class="section">
-      <div class="header">
-        <div class="copy">
-          <p >
-            &copy;2025<a href="https://www.linkedin.com/in/elias-ngugi/">Elias</a>
-          </p>
+        <div class="header">
+            <div class="copy">
+                <p>&copy;2025 <a href="https://www.linkedin.com/in/elias-ngugi/">Elias</a></p>
+            </div>
+            <div class="playScore">
+                <p>Computer &ThinSpace; <span id="computerScore">0</span></p>
+                <p><span id="playerScore">0</span> &ThinSpace; Player</p>
+            </div>
         </div>
-        <div class="playScore">
-          <p>Computer &ThinSpace; <span>0</span></p>
-          <p><span>0</span> &ThinSpace; Player</p>
+        <div class="choices">
+            <p>Computer<br>
+                <span id="computerIcon">✌️</span>
+            </p>
+            <p id="playScore">Currently Draw</p>
+            <p>Player<br>
+                <span id="playerIcon">✌️</span>
+            </p>
         </div>
-      </div>
-      <div class="choices">
-        <p>Computer<br>
-        <span id="computerIcon">✌️</span>
-        </p>
-        <p id="playScore">Currently Draw</p>
-        <p>Player<br>
-          <span id="playerIcon">✌️</span>
-        </p>
-      </div>
 
-      <div class="buttons">
-        <button id="rock">✊ <br>Rock</button>
-        <button id="paper">✋<br>Paper</button>
-        <button id="Scissors">✌️<br>Scissors</button>
-      </div>
+        <div class="buttons">
+            <button id="rockbtn">✊<br>Rock</button>
+            <button id="paperbtn">✋<br>Paper</button>
+            <button id="scissorsbtn">✌️<br>Scissors</button>
+        </div>
     </section>
-    <script  src="/src/main.js"></script>
-  </body>
+    
+    <script src="src/main.js"></script>
+</body>
 </html>
+
+
